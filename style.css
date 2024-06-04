@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul li{
+    list-style: none;
+}
+.header .top{
+    margin: 10px 0;
+    border-bottom: 1px solid #e9e3e3;
+}
+.top input{
+    width: 50%;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.top input::placeholder{
+    text-align: center;
+}
+.top .icon{
+    padding: 12px 20px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    position: absolute;
+    border-radius: 3px;
+}
+.top .list{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.list li a{
+    text-decoration: none;
+    border-right: 1px solid #e9e3e3;
+    padding-right: 20px;
+    color: grey;
+    transition: 0.5s;
+}
+.list li a:last-child{
+    font-size: 18px;
+}
+.list li a:hover{
+    color: red;
+}
+.bot{
+    border-bottom: 1px solid #e9e3e3;
+}
+.bot .logo{
+    display: inline-block;
+    width: 160px;
+}
+.bot .list-menu{
+    display: flex;
+    gap: 30px;
+}
+.list-menu li {
+    margin-top: 25px;
+}
+.list-menu li a{
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+}
+.list-menu li a:hover{
+    color: red;
+    padding: 15px;
+    background-color: rgb(227, 224, 224);
+}
+.list-menu .chevron i{
+    rotate: 180deg;
+}
+.card{
+   margin-bottom: 20px;
+}
+.card-body .card-title{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card-body .card-title:hover {
+    color: red;
+}
+.card-body .card-star{
+    cursor: pointer;
+}
+.card-star i{
+    color: rgb(231, 205, 11);
+    margin: 15px 0;
+}
+.price{
+    font-size: 19px;
+    position: relative;
+    color: rgb(214, 6, 6);
+    font-weight: 500;
+}
+.price .dong{
+    position: absolute;
+    top: -6px;
+    font-size: 14px;
+}
+.price .discount{
+    margin-left: 15px;
+    color: rgb(106, 104, 104);
+    text-decoration: line-through;
+    font-weight: 300;
+    font-size: 16px;
+}
