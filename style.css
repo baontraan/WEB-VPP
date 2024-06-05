@@ -118,7 +118,8 @@ body{
 .card-body .card-title {
     cursor: pointer;
     transition: 0.5s;
-    font-size: 16px;
+    font-size: 14px;
+    text-align: center;
 }
 
 .card-body .card-title:hover {
@@ -180,11 +181,9 @@ body{
     left: 40%;
     transform: translateY(-40%);
 }
-
-.deco-1 {
+.decor-1 {
     position: relative;
 }
-
 .decor-1::after {
     content: "";
     width: 10%;
@@ -196,7 +195,6 @@ body{
     left: 45%;
     transform: translateY(-45%);
 }
-
 .button {
     display: inline-block;
     padding: 10px;
@@ -208,28 +206,23 @@ body{
     border: none;
     transition: 0.5s;
 }
-
 .button:hover {
     background-color: rgb(245, 66, 66);
 }
-
 .footer {
     background-color: rgba(18, 17, 17, 0.879);
     padding-bottom: 35px;
 }
-
 .title {
     color: #fff;
     margin: 35px 0 25px 31px;
     font-weight: 650;
 }
-
 .about .about-cty {
     color: white;
     font-weight: 400;
     margin: 15px 0;
 }
-
 .footer .list-product a {
     margin: 20px 0;
     display: block;
@@ -238,11 +231,9 @@ body{
     font-weight: 400;
     transition: 0.5s;
 }
-
 .footer .list-product a:hover {
     color: red;
 }
-
 .footer .list-support .support a {
     text-decoration: none;
     margin: 10px 0;
@@ -251,16 +242,13 @@ body{
     display: block;
     transition: 0.5s;
 }
-
 .footer .list-support .support a:hover {
     color: red;
 }
-
 .footer .connect {
     display: flex;
     justify-content: center;
 }
-
 .footer .connect .social a {
     display: block;
     text-decoration: none;
@@ -281,94 +269,94 @@ body{
 }
 .footer .connect .social a:hover {
     background-color: rgb(234, 66, 66);
-}
+} */
 .list-support .support{
     margin: 20px 0;
 }
 .sideBar{
-    font-size: 27px;
-    cursor: pointer;
-    color: rgb(85, 83, 83);
-    display: none;
-    position: absolute;
-    top: 33px;
-    right: 40px;
+        font-size: 27px;
+        cursor: pointer;
+        color: rgb(85, 83, 83);
+        display: none;
+        position: absolute;
+        top: 33px;
+        right: 40px;
 }
 .sideBar i:last-child{
-    display: none;
-    transform: translateY(10px);
-}
+        display: none;
+        transform: translateY(10px);
+ }
 .sideBar.active i:last-child{
-    display: block;
+        display: block;
 }
 .sideBar.active i:first-child{
-    display: none;
+        display: none;
 }
 .shopping .icon-shopping{
-    text-decoration: none;
-    display: block;
-    color: #000;
-    font-size: 27px;
-    cursor: pointer;
-    position: absolute;
-    top: 33px;
-    left: 40px;
-    display: none;
+        text-decoration: none;
+        display: block;
+        color: #000;
+        font-size: 27px;
+        cursor: pointer;
+        position: absolute;
+        top: 33px;
+        left: 40px;
+        display: none;
 }
 .sub-menu{
-    padding: 15px 20px;
-    background-color: #727171f6;
-    position: absolute;
-    top: 0;
-    left: -360px;
-    width: 25%;
-    height: 400vh;
-    z-index: 99999;
-    transition: 0.6s;
-}
+        padding: 15px 20px;
+        background-color: #727171f6;
+        position: absolute;
+        top: 0;
+        left: -360px;
+        width: 25%;
+        height: 400vh;
+        z-index: 2;
+        transition: 0.6s;
+ }
 .sub-menu.active{
-    left:0;
+        left:0;
 }
 .onTop{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 17px;
-    border-bottom: 1px solid #d0d0d08f;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 17px;
+        border-bottom: 1px solid #d0d0d08f;
 }
 .onTop .users-icon{
-    margin: 15px 0;
+        margin: 15px 0;
 }
 .onTop .users-icon a{
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
 }
 .onTop .find{
- width: 60%;
- padding: 3px 10px;
- outline: none;
+    width: 60%;
+    padding: 3px 10px;
+    outline: none;
 }
 .onTop .icon-find{
-    padding: 12px 20px;
-    background-color: red;
-    color: #fff;
-    border-radius: 3px;
+        padding: 12px 20px;
+        background-color: red;
+        color: #fff;
+        border-radius: 3px;
 }
 .searching{
-    display: flex;
+        display: flex;
 }
 .onBot .list-submenu li{
-    padding: 15px 0;
-    position: relative;
-    transform: translateX(-31px);
-    border-bottom: 1px solid #d0d0d08f;
-    font-size: 14px;
+        padding: 15px 0;
+        position: relative;
+        transform: translateX(-31px);
+        border-bottom: 1px solid #d0d0d08f;
+        font-size: 14px;
 }
 .list-submenu a{
-    text-decoration: none;
-    color: #000;
-}
-/* responsive */
+        text-decoration: none;
+        color: #000;
+} 
+/* responsive  */
 @media (max-width: 1200px) {
     .list-menu li {
         font-size: 14px;
@@ -397,4 +385,41 @@ body{
      .shopping .icon-shopping {
         display: block;
     }
+} 
+@media (max-width: 1245px){
+    body{
+        overflow-x: hidden;
+    }
 }
+@media (max-width: 1200px){
+    .card{
+       position:absolute;
+       left: 21%;
+    }
+}
+@media (max-width: 992px){
+    .card{
+        position: absolute;
+        left: 27%;
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        position: absolute;
+        left: 16%;
+    }
+}
+@media (max-width: 576px) {
+    .card {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .decor {
+        font-size: 15px;
+    }
+    .decor::after{
+        height: 1px;
+    }
+}
+
