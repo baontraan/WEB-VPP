@@ -91,13 +91,21 @@ body{
     color: #000;
     transition: 0.5s;
 }
-
+/* According */
+.according{
+    position: relative;
+}
+.child .list-child{
+    position: absolute;
+    top: 45px;
+    z-index: 3;
+    background-color: red;
+}
 .list-menu li a:hover {
     color: red;
     padding: 15px;
     background-color: rgb(227, 224, 224);
 }
-
 .list-menu .chevron i {
     rotate: 180deg;
 }
@@ -211,7 +219,7 @@ body{
 }
 .footer {
     background-color: rgba(18, 17, 17, 0.879);
-    padding-bottom: 35px;
+    padding: 0 30px 35px 0;
 }
 .title {
     color: #fff;
@@ -253,13 +261,14 @@ body{
     display: block;
     text-decoration: none;
     color: white;
-    margin: 20px 40px 20px 0;
+    margin: 20px;
     padding: 25px;
     background-color: red;
     width: 35px;
     border-radius: 28px;
     position: relative;
     transition: 0.5s;
+    text-align: center;
 }
 .icon-social {
     position: absolute;
@@ -269,7 +278,7 @@ body{
 }
 .footer .connect .social a:hover {
     background-color: rgb(234, 66, 66);
-} */
+} 
 .list-support .support{
     margin: 20px 0;
 }
@@ -325,10 +334,11 @@ body{
 }
 .onTop .users-icon{
         margin: 15px 0;
+        color: #ebe5e5;
 }
 .onTop .users-icon a{
         text-decoration: none;
-        color: #000;
+        color: #ebe5e5;
         cursor: pointer;
 }
 .onTop .find{
@@ -354,7 +364,7 @@ body{
 }
 .list-submenu a{
         text-decoration: none;
-        color: #000;
+        color: #ebe5e5;
 } 
 /* responsive  */
 @media (max-width: 1200px) {
@@ -364,6 +374,10 @@ body{
 
     .list-menu .mini-icon {
         display: none;
+    }
+    .footer{
+        display: flex;
+       text-align: center;
     }
 }
 @media (max-width: 992px){
@@ -414,7 +428,15 @@ body{
         left: 50%;
         transform: translateX(-50%);
     }
-
+    .bot .logo{
+        width: 140px;
+    }
+    .sideBar{
+        font-size: 20px;
+    }
+    .shopping .icon-shopping {
+        font-size: 20px;
+    }
     .decor {
         font-size: 15px;
     }
@@ -422,4 +444,19 @@ body{
         height: 1px;
     }
 }
-
+@media (max-width: 500px){
+    .bot .logo {
+     width: 120px;
+    }
+}
+@media (max-width:340px){
+    .footer .connect .social a{
+        padding: 20px;
+        width: 20px;
+    }
+    .icon-social {
+        font-size: 18px;
+        top: 7px;
+        left: 12px;
+    }
+}
