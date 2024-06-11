@@ -94,12 +94,31 @@ body{
 /* According */
 .according{
     position: relative;
+    transition: 0.2s;
 }
 .child .list-child{
     position: absolute;
-    top: 45px;
     z-index: 3;
-    background-color: red;
+    background-color: red  ;
+    top: 43.5px;
+    left: 5px;
+    padding: 0 25px;
+    transform: translateY(60px);
+    visibility: hidden;
+}
+.according:hover .child .list-child{
+    transform: translateY(0);
+    visibility: visible;
+}
+.list-child .list-according a{
+    font-size: 14px;
+    padding: 0;
+}
+.list-child .list-according a:hover{
+    padding: 0;
+    color: red;
+    background-color: white;
+    transition: 0.2s;
 }
 .list-menu li a:hover {
     color: red;
@@ -109,7 +128,6 @@ body{
 .list-menu .chevron i {
     rotate: 180deg;
 }
-
 /* hot product */
 .card {
     margin-bottom: 20px;
