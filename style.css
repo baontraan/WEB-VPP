@@ -81,52 +81,56 @@ body{
     gap: 30px;
 }
 
-.list-menu li {
+.list-menu >li {
     margin-top: 25px;
 }
 
-.list-menu li a {
+.list-menu >li >a {
     padding: 15px;
     text-decoration: none;
     color: #000;
     transition: 0.5s;
 }
-/* According */
-.according{
-    position: relative;
-    transition: 0.2s;
-}
-.child .list-child{
-    position: absolute;
-    z-index: 3;
-    background-color: red  ;
-    top: 43.5px;
-    left: 5px;
-    padding: 0 25px;
-    transform: translateY(60px);
-    visibility: hidden;
-}
-.according:hover .child .list-child{
-    transform: translateY(0);
-    visibility: visible;
-}
-.list-child .list-according a{
-    font-size: 14px;
-    padding: 0;
-}
-.list-child .list-according a:hover{
-    padding: 0;
-    color: red;
-    background-color: white;
-    transition: 0.2s;
-}
-.list-menu li a:hover {
+.list-menu >li >a:hover{
     color: red;
     padding: 15px;
-    background-color: rgb(227, 224, 224);
+    background-color: rgb(227,224,224);
+}
+/* According */
+.list-menu >li{
+    position: relative;
+}
+.list-menu .according{
+    position: absolute;
+    padding: 15px;
+    background-color: #fcfcfc;
+    z-index: 9;
+    top: 80px;
+    width: 180px;
+    pointer-events: none;
+    transition: all ease-in-out 0.5s;
+    opacity: 0;
+    box-shadow: 5px #fff;
+}
+.according .list-according{
+    margin: 10px 0;
+}
+.according .list-according a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.according .list-according a:hover{
+    color: red;
+}
+.list-menu li:hover .according{
+    pointer-events: visible;
+    opacity: 1;
+    top: 39px;
 }
 .list-menu .chevron i {
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 /* hot product */
 .card {
