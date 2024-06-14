@@ -482,3 +482,42 @@ body{
         left: 12px;
     }
 }
+
+/* category */
+.category-top p a{
+    text-decoration: none;
+    color: red;
+    font-size: 17px;
+}
+.category-top p a:first-child{
+    color: #000;
+    transition: 0.5s;
+}
+.category-top p a:first-child:hover{
+    color: red;
+}
+.category-left{
+    margin: 15px 0;;
+}
+.category-left .category-left-li >a {
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+.category-left .category-left-li a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+}   
+.category-left .category-left-li ul li {
+   margin: 15px 0;
+}
+.category-left .category-left-li ul li a {
+    transition: 0.5s;
+}
+.category-left .category-left-li ul li a:hover {
+    color: red;
+}
+.category-left .category-left-li .chevron i{
+    transform: rotate(180deg);
+}
