@@ -200,7 +200,7 @@
       <div class="category-top d-flex my-3">
         <p><a class="pagePrev" href="">Trang Chủ</a></p>
         <span class="mx-2"><i class="fa-solid fa-chevron-right"></i></span>
-        <p><a class="pageSimp" href="">Sổ Kế Hoạch</a></p>
+        <p><a class="pageSimp" href="javascript: ;">Sổ Kế Hoạch</a></p>
       </div>
       <div class="row">
         <div class="category-left col-lg-3">
@@ -245,8 +245,33 @@
                 </li>
               </ul>
             </li>
-            <li class="category-left-li"><a href="">Giá Sản Phẩm</a></li>
-            <li class="category-left-li"><a href="">Màu</a></li>
+            <li class="category-left-li">
+              <a href="">Giá Sản Phẩm</a>
+              <!-- Slide-Range -->
+              <div class="range">
+                <div class="sliderValue">
+                  <span>500</span>
+                </div>
+                <div class="field">
+                  <div class="value left">
+                    <div class="price fs-6">0<span class="dong">đ</span></div>
+                  </div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="1000000"
+                    aria-label="range"
+                    value="500000"
+                  />
+                  <div class="value right">
+                    <div class="price fs-6">
+                      1,000,000<span class="dong">đ</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="category-left-li"><a href="">Màu</a></li> -->
           </ul>
         </div>
         <div class="category-right col-lg-9">
@@ -711,5 +736,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="subMenu.js"></script>
+    <script src="slideRange.js"></script>
   </body>
 </html>

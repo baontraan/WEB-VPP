@@ -489,11 +489,14 @@ body{
     color: red;
     font-size: 17px;
 }
-.category-top p a:first-child{
+ .category-top .pagePrev{
     color: #000;
     transition: 0.5s;
-}
-.category-top p a:first-child:hover{
+ }
+  .category-top .pagePrev:hover{
+      color: red;
+  }
+.category-top .pageSimp{
     color: red;
 }
 .category-left{
@@ -520,4 +523,37 @@ body{
 }
 .category-left .category-left-li .chevron i{
     transform: rotate(180deg);
+}
+/* Slide Range */
+.range .field{
+    position: relative;
+    display: flex;
+}
+.range .field input {
+    height: 3px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.range .field .value{
+    position: absolute;
+    font-weight: 600;
+}
+.range .field .value.left {
+    left: 0;
+    top: 10px;
+}
+.range .field .value.right {
+    right: 0;
+    top: 10px;
+}
+.range .sliderValue{
+    text-align: center;
+    margin: 15px 0
+}
+.sliderValue span{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #66FF99;
+    color: red;
 }
