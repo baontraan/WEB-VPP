@@ -553,7 +553,9 @@ body{
 }
 .sliderValue span{
     padding: 5px;
-    border-radius: 50%;
     background-color: #66FF99;
     color: red;
+    width: 30%;
+    display: inline-block;
+    border-radius: 30px;
 }
