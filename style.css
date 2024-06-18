@@ -24,7 +24,6 @@ body{
     margin: 10px 0;
     border-bottom: 1px solid #e9e3e3;
 }
-
 .top input {
     width: 50%;
     outline: none;
@@ -32,11 +31,9 @@ body{
     position: relative;
     margin-bottom: 10px;
 }
-
 .top input::placeholder {
     text-align: center;
 }
-
 .top .icon {
     padding: 12px 20px;
     background-color: red;
@@ -46,13 +43,11 @@ body{
     position: absolute;
     border-radius: 3px;
 }
-
 .top .list {
     display: flex;
     margin-top: 10px;
     justify-content: center;
     gap: 30px;
-
 }
 .list li a {
     text-decoration: none;
@@ -70,21 +65,17 @@ body{
 .bot {
     border-bottom: 1px solid #e9e3e3;
 }
-
 .bot .logo {
     display: inline-block;
     width: 160px;
 }
-
 .bot .list-menu {
     display: flex;
     gap: 30px;
 }
-
 .list-menu >li {
     margin-top: 25px;
 }
-
 .list-menu >li >a {
     padding: 15px;
     text-decoration: none;
