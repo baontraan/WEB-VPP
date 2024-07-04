@@ -17,7 +17,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>NoteBook</title>
+    <title>Notebook</title>
   </head>
   <body>
     <!-- Header -->
@@ -195,7 +195,7 @@
         </div>
       </div>
     </div>
-    <!-- NoteBook -->
+    <!-- Category -->
     <div class="container">
       <div class="category-top d-flex my-3">
         <p><a class="pagePrev" href="index.html">Trang Chủ</a></p>
@@ -203,7 +203,7 @@
         <p><a class="pageSimp" href="javascript: ;">Sổ Ghi Chép</a></p>
       </div>
       <div class="row">
-        <div class="category-left col-lg-3">
+        <div class="category-left col-md-4 col-lg-3 col-xl-3">
           <ul>
             <li class="category-left-li">
               <a href="">Danh Mục</a>
@@ -274,32 +274,111 @@
             <!-- <li class="category-left-li"><a href="">Màu</a></li> -->
           </ul>
         </div>
-        <div class="category-right col-lg-9">
+        <div class="category-right col-sm col-md-8 col-lg-9 col-xl-9">
           <div class="category-right-top">
             <div class="row">
-              <div class="col-lg-8">
+              <div class="col-md-10 col-lg-10 col-xl-10">
                 <h4>Sổ Ghi Chép</h4>
               </div>
-              <div class="col-lg-4">
+              <div class="flex col-md-2 col-lg-2 col-xl-2">
                 <select aria-label="label">
                   <option value="">Mặc Định</option>
                   <option value="">Mặc Định</option>
                   <option value="">Mặc Định</option>
                 </select>
+                <div class="icon-according">
+                  <span class="symbol"
+                    ><i class="fa-solid fa-bars-staggered"></i
+                  ></span>
+                </div>
+                <!-- Side According -->
+                <div class="sideAccording">
+                  <ul>
+                    <li>
+                      <a href="">Danh Mục</a>
+                      <ul>
+                        <li class="">
+                          <a href=""
+                            >Đồ Dùng Học Tập
+                            <span class="chevron"
+                              ><i class="fa-solid fa-chevron-up"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href=""
+                            >Bút Viết
+                            <span class="chevron"
+                              ><i class="fa-solid fa-chevron-up"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href=""
+                            >Sổ - Tập
+                            <span class="chevron"
+                              ><i class="fa-solid fa-chevron-up"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href=""
+                            >Phụ Kiện
+                            <span class="chevron"
+                              ><i class="fa-solid fa-chevron-up"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href=""
+                            >Khuyến Mãi
+                            <span class="chevron"
+                              ><i class="fa-solid fa-chevron-up"></i></span
+                          ></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="category-left-li">
+                      <a href="">Giá Sản Phẩm</a>
+                      <!-- Slide-Range -->
+                      <div class="range">
+                        <div class="sliderValue">
+                          <span>500000</span>
+                        </div>
+                        <div class="field">
+                          <div class="value left">
+                            <div class="price fs-6">
+                              0<span class="dong">đ</span>
+                            </div>
+                          </div>
+                          <input
+                            type="range"
+                            min="0"
+                            max="1000000"
+                            aria-label="range"
+                            value="500,000"
+                          />
+                          <div class="value right">
+                            <div class="price fs-6">
+                              1,000,000<span class="dong">đ</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- <li class="category-left-li"><a href="">Màu</a></li> -->
+                  </ul>
+                </div>
               </div>
               <p class="detail">
                 Sổ tay, sổ học sinh, hay vở viết đều quá quen thuộc với tất cả
                 mọi người. Hiện nay trên thị trường có đa dạng các mẫu sổ được
-                thiết kế với nhiều kiểu dáng cũng như màu sắc khác nhau.
-                <br />Để lựa chọn cho mình một quyển sổ ưng ý, phù hợp với cá
-                tính cũng như mục đích sử dụng hãy xem ngay các cuốn sổ Klong
-                dưới đây. Từ sổ giả da, sổ lò xo, sổ còng…
+                thiết kế với nhiều kiểu dáng cũng như màu sắc khác nhau. <br />
+                Để lựa chọn cho mình một quyển sổ ưng ý, phù hợp với cá tính
+                cũng như mục đích sử dụng hãy xem ngay các cuốn sổ Klong dưới
+                đây. Từ sổ giả da, sổ lò xo, sổ còng…
               </p>
             </div>
           </div>
           <div class="bot">
             <div class="row">
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
@@ -308,8 +387,8 @@
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
-                      Vở caro 10x10mm may dán gáy luyện viết chữ Trung/Nhật/Hàn
+                    <h5 class="card-title text-center">
+                      Vở Caro 10x10 mm may dán gáy luyện viết chữ Trung/Hàn
                     </h5>
                     <span class="card-star d-block text-center">
                       <i class="fa-solid fa-star"></i>
@@ -319,22 +398,21 @@
                       <i class="fa-solid fa-star"></i>
                     </span>
                     <div class="price text-center">
-                      36,860<span class="dong">đ</span>
+                      17,000<span class="dong">đ</span>
                     </div>
                   </div>
-                  <div class="sale">-3%</div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
-                      src="https://pos.nvncdn.com/7a6d8f-102734/ps/20240316_7ndrHWCcwU.png"
+                      src="https://pos.nvncdn.com/7a6d8f-102734/ps/20240311_mH5HFkU8RZ.png"
                       class="card-img-top"
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title text-start">
+                    <h5 class="card-title text-center">
                       Tập sổ tay note B5 30 tờ S42 màu retro S42
                     </h5>
                     <span class="card-star d-block text-center">
@@ -344,27 +422,23 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </span>
-                    <div class="price">
-                      36,860<span class="dong">đ</span>
-                      <span class="discount"
-                        >38,000<span class="dong">đ</span></span
-                      >
+                    <div class="price text-center">
+                      19,000<span class="dong">đ</span>
                     </div>
                   </div>
-                  <div class="sale">-3%</div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
-                      src="https://pos.nvncdn.com/7a6d8f-102734/ps/20240311_xAlBg2UYI4.png"
+                      src="https://pos.nvncdn.com/7a6d8f-102734/ps/20240405_43CIN1EO7e.jpeg"
                       class="card-img-top"
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
-                      Vở kẻ ngang đóng gáy A5 256 trang No Bad Days S43
+                    <h5 class="card-title text-center">
+                      Vở kẻ ngang đóng gáy A5 256 trang No Bad Days
                     </h5>
                     <span class="card-star d-block text-center">
                       <i class="fa-solid fa-star"></i>
@@ -374,12 +448,12 @@
                       <i class="fa-solid fa-star"></i>
                     </span>
                     <div class="price text-center">
-                      36,860<span class="dong">đ</span>
+                      41,000<span class="dong">đ</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
@@ -388,7 +462,7 @@
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title text-start">
                       Vở kẻ ngang chấm may dán gáy B5 200 trang
                     </h5>
                     <span class="card-star d-block text-center">
@@ -398,17 +472,13 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </span>
-                    <div class="price">
-                      36,860<span class="dong">đ</span>
-                      <span class="discount"
-                        >38,000<span class="dong">đ</span></span
-                      >
+                    <div class="price text-center">
+                      25,000<span class="dong">đ</span>
                     </div>
                   </div>
-                  <div class="sale">-3%</div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
@@ -417,7 +487,7 @@
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title text-start">
                       Vở kẻ ngang chấm may dán gáy B5 120 trang
                     </h5>
                     <span class="card-star d-block text-center">
@@ -427,17 +497,13 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </span>
-                    <div class="price">
-                      36,860<span class="dong">đ</span>
-                      <span class="discount"
-                        >38,000<span class="dong">đ</span></span
-                      >
+                    <div class="price text-center">
+                      16,000<span class="dong">đ</span>
                     </div>
                   </div>
-                  <div class="sale">-3%</div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
@@ -446,7 +512,7 @@
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title text-center">
                       Vở kẻ ngang nét đứt may dán gáy B5 80 trang
                     </h5>
                     <span class="card-star d-block text-center">
@@ -456,17 +522,13 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </span>
-                    <div class="price">
-                      36,860<span class="dong">đ</span>
-                      <span class="discount"
-                        >38,000<span class="dong">đ</span></span
-                      >
+                    <div class="price text-center">
+                      12,000<span class="dong">đ</span>
                     </div>
                   </div>
-                  <div class="sale">-3%</div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
@@ -475,8 +537,8 @@
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
-                      Vở Campus KN Muted Color 80 trang MUC-80
+                    <h5 class="card-title text-center">
+                      Vở Campus KN Muted Color 80 trang
                     </h5>
                     <span class="card-star d-block text-center">
                       <i class="fa-solid fa-star"></i>
@@ -485,17 +547,13 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </span>
-                    <div class="price">
-                      36,860<span class="dong">đ</span>
-                      <span class="discount"
-                        >38,000<span class="dong">đ</span></span
-                      >
+                    <div class="price text-center">
+                      12,000<span class="dong">đ</span>
                     </div>
                   </div>
-                  <div class="sale">-3%</div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
@@ -504,8 +562,8 @@
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
-                      Vở KN nét đứt may dán gáy B5 200tr Klong
+                    <h5 class="card-title text-center">
+                      Vở KN nét đứt may dán gáy B5 200 trang
                     </h5>
                     <span class="card-star d-block text-center">
                       <i class="fa-solid fa-star"></i>
@@ -514,17 +572,13 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </span>
-                    <div class="price">
-                      36,860<span class="dong">đ</span>
-                      <span class="discount"
-                        >38,000<span class="dong">đ</span></span
-                      >
+                    <div class="price text-center">
+                      25,000<span class="dong">đ</span>
                     </div>
                   </div>
-                  <div class="sale">-3%</div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
@@ -533,7 +587,7 @@
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title text-center">
                       Vở kẻ ngang nét đứt may dán gáy B5 120 trang
                     </h5>
                     <span class="card-star d-block text-center">
@@ -543,17 +597,13 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </span>
-                    <div class="price">
-                      36,860<span class="dong">đ</span>
-                      <span class="discount"
-                        >38,000<span class="dong">đ</span></span
-                      >
+                    <div class="price text-center">
+                      16,000<span class="dong">đ</span>
                     </div>
                   </div>
-                  <div class="sale">-3%</div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
@@ -562,37 +612,33 @@
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
-                      Vở KN Four Seasons 2 120 trang BFS2120-7072
+                    <h5 class="card-title text-center">
+                      Vở KN Four Season 2 120 trang
                     </h5>
-                    <span class="card-star text-center">
+                    <span class="card-star d-block text-center">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </span>
-                    <div class="price">
-                      36,860<span class="dong">đ</span>
-                      <span class="discount"
-                        >38,000<span class="dong">đ</span></span
-                      >
+                    <div class="price text-center">
+                      15,000<span class="dong">đ</span>
                     </div>
                   </div>
-                  <div class="sale">-3%</div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
-                      src="https://pos.nvncdn.com/7a6d8f-102734/ps/20240313_beef95CStv.jpeg"
+                      src="https://pos.nvncdn.com/7a6d8f-102734/ps/20240424_DkfC0x3cDk.jpeg"
                       class="card-img-top"
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
-                      Vở kẻ ngang TUBE not ebook TB01223455
+                    <h5 class="card-title text-center">
+                      Vở Dash Line lò xo kép bìa nhựa B5 200 trang
                     </h5>
                     <span class="card-star d-block text-center">
                       <i class="fa-solid fa-star"></i>
@@ -602,28 +648,28 @@
                       <i class="fa-solid fa-star"></i>
                     </span>
                     <div class="price">
-                      36,860<span class="dong">đ</span>
+                      36,000<span class="dong">đ</span>
                       <span class="discount"
-                        >38,000<span class="dong">đ</span></span
+                        >45,600<span class="dong">đ</span></span
                       >
                     </div>
                   </div>
                   <div class="sale">-3%</div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div class="card" style="width: 11rem">
                   <a href="javascript: ;">
                     <img
-                      src="https://pos.nvncdn.com/7a6d8f-102734/ps/20240313_kDtraKiIiH.jpeg"
+                      src="https://pos.nvncdn.com/7a6d8f-102734/ps/20240424_DkfC0x3cDk.jpeg"
                       class="card-img-top"
                       alt=""
                   /></a>
                   <div class="card-body">
-                    <h5 class="card-title">
-                      Sổ xé gáy A6 TUBE i do not think annything
+                    <h5 class="card-title text-center">
+                      Vở Dash Line lò xo kép bìa nhựa B5 120 trang
                     </h5>
-                    <span class="card-star d-bock text-center">
+                    <span class="card-star d-block text-center">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
@@ -631,9 +677,9 @@
                       <i class="fa-solid fa-star"></i>
                     </span>
                     <div class="price">
-                      36,860<span class="dong">đ</span>
+                      26,000<span class="dong">đ</span>
                       <span class="discount"
-                        >38,000<span class="dong">đ</span></span
+                        >31,200<span class="dong">đ</span></span
                       >
                     </div>
                   </div>
@@ -737,5 +783,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="slideRange.js"></script>
+    <script src="subMenu.js"></script>
+    <script>
+      const iconAccording = document.querySelector(".icon-according");
+      const sideAccording = document.querySelector(".sideAccording");
+      iconAccording.addEventListener("click", function () {
+        iconAccording.classList.toggle("togle");
+        sideAccording.classList.toggle("togle");
+      });
+    </script>
   </body>
 </html>

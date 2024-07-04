@@ -330,9 +330,9 @@ body{
         background-color: #727171f6;
         position: absolute;
         top: 0;
-        left: -360px;
+        left: -390px;
         width: 25%;
-        height: 400vh;
+        height: 200vh;
         z-index: 2;
         transition: 0.6s;
  }
@@ -405,14 +405,58 @@ body{
     width: 160px;
  }
 }
+/* Responsive sideBar */
 @media (max-width: 991px){
     .sideBar {
-            display: block;
+        display: block;
     }
      .shopping .icon-shopping {
         display: block;
     }
 } 
+/* Responsive Sub Menu */
+@media (max-width:890px){
+    .onTop .find {
+        width: 80%;
+        padding: 3px 5px;
+}
+    .onTop .icon-find {
+        padding: 12px;
+        background-color: red;
+        color: #fff;
+        border-radius: 3px;
+}
+ .sub-menu {
+     width: 40%;
+ }
+}
+@media (max-width:760px) {
+    .onTop .find {
+        width: 90%;
+        padding: 3px 5px;
+    }
+    .onTop .icon-find {
+        padding: 10px;
+        background-color: red;
+        color: #fff;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+}
+@media (max-width:572px){
+    .sub-menu{
+        width: 67%;
+        z-index: 10;
+    }
+}
+@media (max-width:381px){
+    .onTop .users-icon a {
+        font-size: 13px;
+    }
+    .list-submenu a{ 
+        font-size: 13px;
+    }
+}
 @media (max-width: 1245px){
     body{
         overflow-x: hidden;
@@ -582,11 +626,11 @@ select{
     width: 98%;
     z-index: 10;
     height: 80vh;
-    opacity: 0;
+    display: none;
     transition: 0.5s;
 }
 .sideAccording.togle{
-    opacity: 1;
+    display: block;
 }
 .sideAccording ul li{
     margin: 10px 0;
